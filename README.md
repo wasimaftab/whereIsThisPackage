@@ -12,4 +12,4 @@
 
 ### <ins>Usage</ins>:-
 * Call the function by passing a list of R package names, as shown in following example
-* pkgs.found <- whereIsThisPackage(c("limma", "Seurat", "ChAMPdata", "edgeR", "wavelets"))
+* `pkgs.found <- whereIsThisPackage(c("limma", "Seurat", "ChAMPdata", "edgeR", "wavelets"))`
