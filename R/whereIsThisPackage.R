@@ -44,7 +44,9 @@ whereIsThisPackage <- function(list.of.pkgs) {
     
     ## Get list of all CRAN pkgs
     all.packages.CRAN <-
-      as.data.frame(utils::available.packages())
+      as.data.frame(utils::available.packages(repos = "https://cloud.r-project.org"))
+      #as.data.frame(utils::available.packages())
+
     
     idx <-
       which(all.packages.CRAN$Package %in% available.not.installed.pkgs)
